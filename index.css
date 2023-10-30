@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-bars {
+    color: white !important;
+}
+
+a:hover {
+    color: white;
+}
+
+.top {
+position: relative;
+  background-image: url(./img/banner-bg.jpg);
+  background-size: cover;
+}
+
+.top::before {
+content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+#banner {
+    height: 78vh !important;
+}
+
+.btn-banner {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    border: 3px solid white;
+}
+
+#banner p {
+    line-height: 1.9;
+}
+
+
+.about-me-section .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.about-me-section .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    display: block;
+    font-weight: 600;
+    color: #45505b;
+}
+
+.about-me-section .progress .skill .val {
+    float: right;
+  }
+
+.about-me-section .progress-bar-wrap {
+    background: #f2f3f5;
+}
+
+.about-me-section .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #181918;
+  }
+
+  .services-section {
+    background-color: #181918;
+    color: #fff;
+  }
+
+  .card {
+    background-color: #181918;
+  }
+
+  .card:hover i{
+    color: white;
+  }
+
+  .card-title{
+    z-index: 1;
+  }
+  .card-body i {
+    position: absolute;
+    top: 0;
+    opacity: 0.2;
+    left: 0;
+    z-index: -1;
+    font-size: 48px;
+    transition: ease-in-out 0.3s;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    color: #4b4d4b !important;
+}
+
+.blog-section {
+    background: url(./img/blog-bg.jpg) center center;
+    background-size: cover;
+    z-index: 1;
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .blog-section{
+        background-attachment: fixed;
+    }
+}
+
+.blog-section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.blog-section h1,
+.about-me-section h1,
+.services-section h1,
+.experience-section h1,
+.testimonials-section h1,
+.contact-section h1
+ {
+    letter-spacing: 5px;
+}
+
+
+
+.blog-section h1::after,
+.services-section h1::after,
+.testimonials-section h1::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.about-me-section h1::after,
+.experience-section h1::after,
+.contact-section h1::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.blog-section p,
+.blog-section span
+ {
+    color: #c6c5c5;
+    font-weight: 600;
+}
+
+.blog-section .blog-card {
+    border: 3px solid #848684;
+    padding: 30px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.projects-section img {
+    width: 100%;
+    object-fit:cover;
+    height: 380px;
+    /* margin-bottom: 20px; */
+}
+
+.projects-section h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.testimonial-content p {
+    border-left: 4px solid white;
+    line-height: 2;
+    font-size: 19px;
+}
+
+.testimonial-content p i {
+    color: white;
+}
+
+.testimonial-content p,
+.testimonial-content span {
+    color: #c6c5c5;
+    font-weight: 600;
+}
+
+
+.testimonials-section {
+    background: url(img/testimonial-bg.jpg) top center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.testimonials-section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.carousel-indicators button {
+    border-radius: 50%;
+    width: 14px !important;
+    height: 14px !important;
+}
+
+@media (min-width: 992px) {
+    .testimonials-section {
+        background-attachment: fixed;
+    }
+}
+
+.address-info i {
+    font-size: 22px;
+}
+
+.address-info span {
+    color: #898989;
+}
+
+.form-control {
+    padding: 0.675rem 0.75rem !important;
+}
+
+.form-label {
+    width: 115px; 
+    /* margin-right: 20px;  */
+}
+
+@media (max-width: 434px) {
+    .form-label {
+        width: 160px !important;
+    }
+}
+
+.submit-btn,
+.download-btn
+  {
+    border-radius: 50px !important;
+}
+
+.bottom-text {
+    color: #898989;
+    font-weight: 600;
+}
+
+
+.progress {
+    display: flex !important;
+    background-color: #e9ecef !important;
+    border-radius: 0.25rem !important;
+}
+
+
+.experience1 {
+    border-left: 3px solid black;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.experience2 {
+    border-right: 3px solid black;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: end;
+}
+
+.bg-dark {
+    background-color: #181918 !important;
+}
+
+
